@@ -1,0 +1,37 @@
+/* Varibles */
+
+:root{
+    --black-text: #111;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style:none;
+}
+
+.logo{
+    color: var(--black-text);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.54px;
+}
+
+.logo-span{
+    font-style: italic;
+}
+
+.nav-links{
+    color: var(--black-text);
+    font-size: 14px;
+    font-weight: 500;   
+    line-height: 1.14;
+    letter-spacing: -0.28px;
+}
