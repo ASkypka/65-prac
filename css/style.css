@@ -1,0 +1,88 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fafafa;
+  color: #111;
+  font-size: 14px;
+}
+
+:root {
+  --orange: #fd9222;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.logo {
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11em;
+  letter-spacing: -0.03em;
+}
+.logo__part {
+  font-style: italic;
+}
+.header__nav-item {
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: -0.02em;
+}
+
+.hero {
+  border-radius: 30px;
+  background: rgba(17, 17, 17, 0.7);
+}
+.hero__title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21em;
+  /* 121.429% */
+  letter-spacing: -0.03em;
+}
+.hero__item-btn1,
+.hero__item-btn2 {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hero__item-btn1 {
+  border-radius: 100px;
+  background: var(--orange, #fd9222);
+}
+.hero__item-btn1:hover,
+.hero__item-btn1:focus {
+  background: #fcf1e0;
+  color: var(--orange);
+}
+.hero__item-btn2 {
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.hero__item-btn2:hover,
+.hero__item-btn2:focus {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.hero__scroll {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29em;
+  /* 128.571% */
+  letter-spacing: -0.03em;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
