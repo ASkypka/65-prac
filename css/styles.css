@@ -15,8 +15,13 @@ a {
   text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,p{
-margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
 }
 
 .list {
@@ -29,6 +34,20 @@ margin: 0;
   margin: 0 auto;
   width: 1168px;
   padding: 0 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header-container {
@@ -84,9 +103,10 @@ margin: 0;
   background-color: rgba(17, 17, 17, 0.7);
   width: 1136px;
   border-radius: 30px;
+  margin-bottom: 80px;
 }
-.hero-container{
-padding: 381px 40px 40px 40px;
+.hero-container {
+  padding: 381px 40px 40px 40px;
 }
 
 .hero-title {
@@ -99,9 +119,9 @@ padding: 381px 40px 40px 40px;
   width: 484px;
   margin-bottom: 32px;
 }
-.hero-list{
+.hero-list {
   display: flex;
-  gap:14px;
+  gap: 14px;
 }
 .button-how {
   color: var(--white-text);
@@ -112,9 +132,9 @@ padding: 381px 40px 40px 40px;
   line-height: normal;
   background-color: transparent;
   min-width: 183px;
-  padding: 14px 40px ;
+  padding: 14px 40px;
   border-radius: 100px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   display: block;
 }
 .button-how:hover,
@@ -161,32 +181,29 @@ padding: 381px 40px 40px 40px;
   color: var(--orange);
 }
 
-.btn-container{
+.btn-container {
   display: flex;
 }
 
 .section-benefits {
   background: #1e1823;
+  padding: 50px 0;
 }
-
-.title-benefits {
-  color: var(--black, #111);
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.16;
-  letter-spacing: -0.72px;
+.benefits-list {
+  display: flex;
+  gap: 88px;
 }
-
+.benefits-item {
+  width: calc((100% - 176px) / 3);
+}
 .subtitle-benefits {
   color: var(--white, #fff);
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.22;
+  margin-bottom: 18px;
 }
-
 .benefits-description {
   color: rgba(255, 255, 255, 0.7);
   font-family: Montserrat;
@@ -194,10 +211,6 @@ padding: 381px 40px 40px 40px;
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.28px;
-}
-
-.section-benefits {
-  background: #1e1823;
 }
 
 .title-benefits {
