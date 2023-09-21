@@ -282,9 +282,7 @@ p {
   margin-right: 10px;
 }
 .recipe-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  text-align: center;
 }
 .recipe-h2 {
   color: var(--black, #111);
