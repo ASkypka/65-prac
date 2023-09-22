@@ -100,6 +100,23 @@ p {
   display: flex;
   gap: 14px;
 }
+.social-link {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  color: var(--black-text);
+}
+.social-svg {
+  fill: currentColor;
+}
+.social-link:hover,
+.social-link:focus {
+  border-color: #fd9222;
+  color: #fd9222;
+}
 
 .section-hero {
   margin: 0 auto;
@@ -177,11 +194,31 @@ p {
   display: block;
   margin-left: auto;
   border: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
 }
-
+.hero-svg-box {
+  padding: 8px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fd9222;
+}
+.hero-svg {
+  fill: currentColor;
+}
 .button-scroll:hover,
 .button-scroll:focus {
   color: var(--orange);
+}
+.button-scroll:hover .hero-svg-box,
+.button-scroll:focus .hero-svg-box {
+  background-color: var(--orange);
+  color: var(--white-text);
 }
 
 .btn-container {
@@ -245,8 +282,7 @@ p {
 
 /* Ingredients */
 
-
-.ingredients-section{
+.ingredients-section {
   padding: 120px 0 60px;
 }
 
@@ -262,33 +298,31 @@ p {
   text-transform: uppercase;
 }
 
-.colored-span{
+.colored-span {
   color: var(--orange);
 }
 
-.ingredients-list{
+.ingredients-list {
   display: flex;
   flex-wrap: wrap;
-  gap:32px;
+  gap: 32px;
 }
 
-.ingredients-item{
+.ingredients-item {
   width: calc((100% - 32px * 3) / 4);
   border-radius: 15px;
 }
 
-
-.container-img-ingredients{
+.container-img-ingredients {
   margin-bottom: 36px;
   padding: 28px 23px 0;
 }
 
-
-.container-text-ingredients{
+.container-text-ingredients {
   padding: 0 28px 28px;
 }
 
-.ingredients-text{
+.ingredients-text {
   color: var(--white-text);
   font-size: 14px;
   font-weight: 600;
@@ -297,20 +331,17 @@ p {
   text-transform: uppercase;
 }
 
-
-
-.ingredients-item:nth-child(4n + 1){
+.ingredients-item:nth-child(4n + 1) {
   background-color: var(--orange);
   color: var(--white-text);
 }
 
-.ingredients-item:nth-child(4n + 3){
-  background-color: #1E1823;
+.ingredients-item:nth-child(4n + 3) {
+  background-color: #1e1823;
   color: var(--white-text);
 }
 
-
-.ingredients-item:nth-child(2n){
+.ingredients-item:nth-child(2n) {
   border: 1px solid var(--orange);
 }
 
