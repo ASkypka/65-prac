@@ -388,6 +388,7 @@ p {
   font-weight: 600;
   line-height: 1.33; /* 133.333% */
 }
+<<<<<<< Updated upstream
 
 .backdrop {
   position: fixed;
@@ -430,4 +431,33 @@ p {
   pointer-events: none;
 
   transform: translateY(100%);
+=======
+/* SECTION 5*/
+
+.chocolate-item{
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ list-style:none;
+ gap:16px;
+}
+
+.products-list{
+  width: 270px;
+  height: 364px;
+  border-radius: 15px;
+border: 1px solid rgba(17, 17, 17, 0.10);
+
+}
+
+.products-taste{
+  text-transform: uppercase;
+}
+.button-product-price{
+  border-radius: 100px;
+  padding: 8px 20px;
+border: 1px solid rgba(17, 17, 17, 0.10);
+background: #FAFAFA;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+>>>>>>> Stashed changes
 }
