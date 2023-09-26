@@ -275,23 +275,25 @@
           <h2 class="title"><span class="colored-span">Top</span> sellers</h2>
           <ul class="sellers-list list">
             <li class="sellers-item">
-             <a class="overlay-link link" href=""> <div class="overlay">
-              <img
-                src="./images/nuts.jpg"
-                alt="CHOCOLATE WITH NUTS"
-                width="368"
-                height="464"
-              />
-              <p class="overlay-test">
-                Chocolate with fruit is an unbeatable combination of two of
-                the tastiest things in the world. This dessert combines
-                delicate and aromatic chocolate with fresh and juicy fruits,
-                creating a true poetry of taste.
-              </p>
-            </div>
-            <div class="sellers-container-titel">
-              <h3 class="sellers-titel">CHOCOLATE WITH NUTS</h3>
-            </div></a>
+              <a class="overlay-link link" href="">
+                <div class="overlay">
+                  <img
+                    src="./images/nuts.jpg"
+                    alt="CHOCOLATE WITH NUTS"
+                    width="368"
+                    height="464"
+                  />
+                  <p class="overlay-test">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+                <div class="sellers-container-titel">
+                  <h3 class="sellers-titel">CHOCOLATE WITH NUTS</h3>
+                </div></a
+              >
             </li>
             <li class="sellers-item">
               <a class="overlay-link link" href="">
@@ -343,7 +345,7 @@
       <h2>FOOTER</h2>
     </footer>
 
-    <div class="backdrop " data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="btn-close" type="button" data-modal-close>
           <svg class="btn-close-icon" width="28" height="28">
@@ -354,19 +356,82 @@
           LEAVE A REVIEW ABOUT
           <span class="colored-span">OUR CHOCOLATE</span>
         </p>
-          <form class="form-mod">
-            <div class="modal-form-div">
-              <label for="user-name" class="modal-form-label">Name</label>
-              <div class="form-input-box">
-                <input class="box-input" type="text" id="user-name" name="user-name">
-                <svg class="box-input-svg" width="24" height="24">
-                   <use href="./images/icons.svg#icon-user-modal">
-
-                   </use>
-                </svg>
-              </div>
+        <form class="form-mod">
+          <div class="modal-form-div">
+            <label for="user-name" class="modal-form-label">Name</label>
+            <div class="form-input-box">
+              <input
+                class="box-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="box-input-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-user-modal"></use>
+              </svg>
             </div>
-          </form>
+          </div>
+
+          <div class="modal-form-div">
+            <label for="user-email" class="modal-form-label">Email</label>
+            <div class="form-input-box">
+              <input
+                class="box-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+              />
+              <svg class="box-input-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail-modal"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-div">
+            <label for="user-tel" class="modal-form-label">Phone number</label>
+            <div class="form-input-box">
+              <input
+                class="box-input"
+                type="tel"
+                id="user-tel"
+                name="user-tel"
+              />
+              <svg class="box-input-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone-modal"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-div">
+            <label for="user-textarea" class="modal-form-label">Comment</label>
+            <div class="form-input-box">
+              <textarea
+                class="form-textarea"
+                name="user-textarea"
+                id="user-textarea"
+                placeholder="Enter text"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="modal-form-checkbox">
+            <input
+              class="modal-form-checkbox visually-hidden"
+              type="checkbox"
+              name="user-check"
+              id="user-check"
+            />
+            <label class="modal-form-label-checkbox" for="user-check">
+              <span class="modal-form-span">
+                <svg class="modal-form-svg" width="10" height="10">
+                  <use href="./images/icons.svg#icon-modal"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+        </form>
       </div>
     </div>
 

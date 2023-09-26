@@ -500,7 +500,7 @@ p {
   text-align: center;
 }
 
-.title-form{
+.title-form {
   margin-bottom: 50px;
   color: var(--black-text);
   font-size: 24px;
@@ -512,42 +512,91 @@ p {
   width: 298px;
 }
 
-.modal-form-label{
+.modal-form-label {
   display: block;
-color: rgba(64, 64, 64, 0.30);
-font-size: 14px;
-letter-spacing: -0.28px;
-margin-bottom: 8px;
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  margin-bottom: 8px;
 }
 
-.modal-form-div{
+.modal-form-div {
   position: relative;
+  margin-bottom: 18px;
 }
 
-.box-input{
+.box-input {
   position: relative;
   padding: 22px 24px 22px 62px;
   width: 437px;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   outline: transparent;
-  
 }
 
-.box-input:focus-within{
-border: 1.5px solid var(--orange, #FD9222);
-box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+.box-input:focus-within {
+  border: 1.5px solid var(--orange, #fd9222);
+  box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
 }
 
-.box-input:focus-within + .box-input-svg{
-  fill: #FD9222;
+.box-input:focus-within + .box-input-svg {
+  stroke: #fd9222;
 }
 
-
-.box-input-svg{
- position: absolute;
- left: 24px;
- top:50%;
+.box-input-svg {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  fill: transparent;
+  stroke: #404040;
 }
+.form-textarea {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding: 22px 24px;
+  width: 100%;
+  max-width: 437px;
+  min-height: 137px;
+  resize: none;
+  color: rgba(64, 64, 64, 0.3);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.36px;
+  outline: transparent;
+}
+.form-textarea:focus-within {
+  border: 1.5px solid var(--orange, #fd9222);
+  box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+}
+.modal-form-label-checkbox {
+  color: rgba(64, 64, 64, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  display: flex;
+}
+.modal-form-span {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
 
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+.modal-form-link {
+  color: var(--orange, #fd9222);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.28px;
+  text-decoration-line: underline;
+  margin-left: 4px;
+}
+.modal-form-checkbox:checked + .modal-form-label-checkbox > .modal-form-span {
+  background-color: var(--orange);
+  border: none;
+}
