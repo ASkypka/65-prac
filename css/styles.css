@@ -6,6 +6,7 @@
   --orange: #fd9222;
   --btn-hover: #fcf1e0;
   --light: #fafafa;
+  --bg-color: #1e1823;
 }
 
 body {
@@ -498,6 +499,25 @@ p {
   text-transform: uppercase;
 
   text-align: center;
+}
+
+.footer {
+  background-color: var(--bg-color);
+  padding-top: 50px;
+  padding-bottom: 67px;
+}
+
+.footer-container-social {
+  display: flex;
+}
+
+.footer-contact-info {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-svg {
+  fill: var(--white-text);
 }
 
 .title-form {
