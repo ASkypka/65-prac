@@ -350,15 +350,21 @@ p {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
   color: var(--black-text);
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.16;
-  /* 116.667% */
+  line-height: 1.2;
   letter-spacing: -0.72px;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.6px;
+  }
 }
 
 .colored-span {
@@ -372,13 +378,33 @@ p {
 }
 
 .ingredients-item {
-  width: calc((100% - 32px * 3) / 4);
+  width: 100%;
   border-radius: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .ingredients-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .ingredients-item {
+    width: calc((100% - 32px * 3) / 4);
+  }
 }
 
 .container-img-ingredients {
-  margin-bottom: 36px;
-  padding: 28px 23px 0;
+  padding: 32px 50px 0;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .container-img-ingredients {
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .container-img-ingredients {
+    padding: 28px 23px 0;
+  }
 }
 
 .container-text-ingredients {
